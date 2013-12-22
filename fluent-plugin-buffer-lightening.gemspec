@@ -2,11 +2,11 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "fluent-plugin-buffer-lightening"
-  spec.version       = "0.0.0"
+  spec.version       = "0.0.1"
   spec.authors       = ["TAGOMORI Satoshi"]
   spec.email         = ["tagomoris@gmail.com"]
-  spec.description   = %q{Fluentd memory buffer plugin with msec flush intervals and many types of chunk limits}
-  spec.summary       = %q{Alternative memory buffer plugin for Fluentd}
+  spec.description   = %q{Fluentd memory buffer plugin with many types of chunk limits}
+  spec.summary       = %q{Alternative memory buffer plugin for Fluentd to realize less delay}
   spec.homepage      = "https://github.com/tagomoris/fluent-plugin-buffer-lightening"
   spec.license       = "APLv2"
 
