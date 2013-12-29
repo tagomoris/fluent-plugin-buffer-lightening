@@ -7,8 +7,6 @@ These options are to decrease latency from emit to write, and to control chunk s
 
 **NOTICE:** Lightening buffer plugin stores data on memory, so these data will be lost when process/server crashes.
 
-And current version of this plugin adds `try_flush_interval` option to BufferedOutput plugins, to flush buffer chunk with high frequency. For this option, run fluentd with `-r fluent/plugin/output_try_flush_interval_patch`.
-
 ## Installation
 
 Do `gem install fluent-plugin-buffer-lightening` or `fluent-gem ...`.
@@ -41,7 +39,7 @@ Options of `buffer_type memory` are also available:
 
 ### For less delay
 
-For more frequently flushing, use `flush_interval` and `try_flush_interval` with floating point values:
+For more frequently flushing, use `flush_interval` and `try_flush_interval` with floating point values on Fluentd v0.10.42 or later:
 ```
 <match data.**>
   type any_buffered_output_plugin
@@ -53,11 +51,8 @@ For more frequently flushing, use `flush_interval` and `try_flush_interval` with
 </match>
 ```
 
-And, execute fluentd as `fluentd -r fluent/plugin/output_try_flush_interval_patch -c fluentd.conf`.
-
 ## TODO
 
-* remove `output_try_flush_interval_patch` with incoming fluentd dependency
 * more limit patterns
 * patches welcome!
 
