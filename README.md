@@ -1,4 +1,4 @@
-# fluent-plugin-buffer-lightening
+# fluent-plugin-buffer-lightening, a plugin for [Fluentd](http://fluentd.org)
 
 Fluentd buffer plugin on memory to flush with many types of chunk limit methods:
   * events count limit in chunk
