@@ -1,5 +1,4 @@
 require 'fluent/plugin/buf_memory'
-require_relative 'output_try_flush_interval_patch'
 
 module Fluent
   class LighteningBufferChunk < MemoryBufferChunk
