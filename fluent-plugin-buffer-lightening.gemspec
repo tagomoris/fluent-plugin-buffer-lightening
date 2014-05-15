@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "fluent-plugin-buffer-lightening"
-  spec.version       = "0.0.2-rc1"
+  spec.version       = "0.0.2"
   spec.authors       = ["TAGOMORI Satoshi"]
   spec.email         = ["tagomoris@gmail.com"]
   spec.description   = %q{Fluentd memory buffer plugin with many types of chunk limits}

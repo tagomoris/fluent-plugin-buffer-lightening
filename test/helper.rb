@@ -22,7 +22,6 @@ unless ENV.has_key?('VERBOSE')
   $log = nulllogger
 end
 
-require 'fluent/plugin/output_try_flush_interval_patch'
 require 'fluent/plugin/buf_lightening'
 
 class Test::Unit::TestCase
