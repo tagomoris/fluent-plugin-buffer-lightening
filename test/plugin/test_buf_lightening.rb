@@ -14,6 +14,10 @@ class LighteningBufferTest < Test::Unit::TestCase
     buffer_chunk_records_limit 10
 ]
 
+  def setup
+    Fluent::Test.setup
+  end
+
   def create_driver(conf=CONFIG, tag='test')
     Fluent::Test::OutputTestDriver.new(Fluent::DummyBufferedOutput, tag).configure(conf)
   end
